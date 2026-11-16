@@ -1,0 +1,53 @@
+[
+  {
+    "id": "q1",
+    "question": "How long does a buyer have to request rejection of a validated e-Invoice, or a supplier to cancel it?",
+    "expected": ["e-invoice-guideline", "e-invoice-general-faqs"]
+  },
+  {
+    "id": "q2",
+    "question": "When can a supplier issue a consolidated e-Invoice for buyers who do not ask for an e-Invoice?",
+    "expected": ["e-invoice-specific-guideline", "e-invoice-general-faqs"]
+  },
+  {
+    "id": "q3",
+    "question": "How are e-Invoices handled for sales made through an e-commerce platform?",
+    "expected": ["e-invoice-specific-guideline"]
+  },
+  {
+    "id": "q4",
+    "question": "Is an e-Invoice required when a company distributes dividends to its shareholders?",
+    "expected": ["e-invoice-specific-guideline", "e-invoice-general-faqs"]
+  },
+  {
+    "id": "q5",
+    "question": "Are all businesses required to issue e-Invoices, or are some persons exempted?",
+    "expected": ["e-invoice-general-faqs", "e-invoice-guideline"]
+  },
+  {
+    "id": "q6",
+    "question": "Which gifts or contributions made by a resident individual can be deducted in arriving at total income?",
+    "expected": ["pr-4-2024-resident-individual"]
+  },
+  {
+    "id": "q7",
+    "question": "What conditions must a company meet to surrender its adjusted loss to a related company under group relief?",
+    "expected": ["pr-2-2025-group-relief"]
+  },
+  {
+    "id": "q8",
+    "question": "How is the income of a Malaysian resident from operating a Malaysian ship treated for income tax?",
+    "expected": ["pr-1-2025-malaysian-ship"]
+  },
+  {
+    "id": "q9",
+    "question": "Can expenses incurred before a business commences be claimed as a tax deduction?",
+    "expected": ["pr-pre-operational-expenditure"]
+  },
+  {
+    "id": "q10",
+    "question": "What is the current GST rate in Singapore?",
+    "expected": null,
+    "note": "Out of scope on purpose. The correct behaviour is to refuse."
+  }
+]

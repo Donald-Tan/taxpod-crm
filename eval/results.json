@@ -1,0 +1,303 @@
+{
+  "summary": {
+    "ranAt": "2026-11-16T14:59:05.798Z",
+    "complete": false,
+    "questionsRun": "8/10",
+    "chatModel": "gemini-3.6-flash",
+    "rerankModel": "gemini-3.6-flash",
+    "embedModel": "gemini-embedding-001",
+    "topK": 5,
+    "candidates": 20,
+    "minSimilarity": 0.45,
+    "vectorHitRate": "8/8 (100%)",
+    "rerankedHitRate": "8/8 (100%)",
+    "vectorMRR": 1,
+    "rerankedMRR": 1,
+    "answeredWithExpectedCitation": "8/8 (100%)",
+    "outOfScopeRefused": "n/a",
+    "rerankApplied": "8/8 (100%)"
+  },
+  "rows": [
+    {
+      "id": "q1",
+      "question": "How long does a buyer have to request rejection of a validated e-Invoice, or a supplier to cancel it?",
+      "expected": [
+        "e-invoice-guideline",
+        "e-invoice-general-faqs"
+      ],
+      "bestSimilarity": 0.783,
+      "vectorRank": 1,
+      "rerankedRank": 1,
+      "rerankApplied": true,
+      "vectorDocs": [
+        "e-invoice-guideline p.26",
+        "e-invoice-guideline p.25",
+        "e-invoice-guideline p.34",
+        "e-invoice-guideline p.33",
+        "e-invoice-general-faqs p.20"
+      ],
+      "rerankedDocs": [
+        "e-invoice-guideline p.26",
+        "e-invoice-guideline p.25",
+        "e-invoice-guideline p.34",
+        "e-invoice-guideline p.33",
+        "e-invoice-general-faqs p.20"
+      ],
+      "answered": true,
+      "refusalReason": null,
+      "citedExpected": true,
+      "citations": [
+        "e-invoice-guideline p.26",
+        "e-invoice-guideline p.25",
+        "e-invoice-guideline p.34",
+        "e-invoice-guideline p.33",
+        "e-invoice-general-faqs p.20"
+      ],
+      "answer": "A buyer can request rejection of a validated e-Invoice, and a supplier can cancel it, within 72 hours from the time of validation [1][2][3][4][5]. If the e-Invoice is not rejected or cancelled within this 72-hour timeframe, no cancellation is permitted [1][3]. Any subsequent adjustments must be made by issuing a new e-Invoice, such as a credit note, debit note, or refund note e-Invoice [1][3][5]."
+    },
+    {
+      "id": "q2",
+      "question": "When can a supplier issue a consolidated e-Invoice for buyers who do not ask for an e-Invoice?",
+      "expected": [
+        "e-invoice-specific-guideline",
+        "e-invoice-general-faqs"
+      ],
+      "bestSimilarity": 0.761,
+      "vectorRank": 1,
+      "rerankedRank": 1,
+      "rerankApplied": true,
+      "vectorDocs": [
+        "e-invoice-specific-guideline p.49",
+        "e-invoice-specific-guideline p.24",
+        "e-invoice-specific-guideline p.9",
+        "e-invoice-specific-guideline p.18",
+        "e-invoice-specific-guideline p.50"
+      ],
+      "rerankedDocs": [
+        "e-invoice-specific-guideline p.18",
+        "e-invoice-specific-guideline p.49",
+        "e-invoice-general-faqs p.18",
+        "e-invoice-specific-guideline p.9",
+        "e-invoice-specific-guideline p.28"
+      ],
+      "answered": true,
+      "refusalReason": null,
+      "citedExpected": true,
+      "citations": [
+        "e-invoice-specific-guideline p.18",
+        "e-invoice-specific-guideline p.49",
+        "e-invoice-general-faqs p.18"
+      ],
+      "answer": "A supplier can aggregate transactions, statements, or bills for buyers who do not require an e-Invoice on a monthly basis and submit/issue the consolidated e-Invoice within seven (7) calendar days after the month end (or end of the billing month) [1][2][3]."
+    },
+    {
+      "id": "q3",
+      "question": "How are e-Invoices handled for sales made through an e-commerce platform?",
+      "expected": [
+        "e-invoice-specific-guideline"
+      ],
+      "bestSimilarity": 0.749,
+      "vectorRank": 1,
+      "rerankedRank": 1,
+      "rerankApplied": true,
+      "vectorDocs": [
+        "e-invoice-specific-guideline p.111",
+        "e-invoice-specific-guideline p.107",
+        "e-invoice-specific-guideline p.108",
+        "e-invoice-specific-guideline p.116",
+        "e-invoice-specific-guideline p.106"
+      ],
+      "rerankedDocs": [
+        "e-invoice-specific-guideline p.107",
+        "e-invoice-specific-guideline p.108",
+        "e-invoice-general-faqs p.49",
+        "e-invoice-specific-guideline p.111",
+        "e-invoice-specific-guideline p.112"
+      ],
+      "answered": true,
+      "refusalReason": null,
+      "citedExpected": true,
+      "citations": [
+        "e-invoice-specific-guideline p.107",
+        "e-invoice-specific-guideline p.108",
+        "e-invoice-general-faqs p.49",
+        "e-invoice-specific-guideline p.111",
+        "e-invoice-specific-guideline p.112"
+      ],
+      "answer": "For transactions conducted through an e-commerce platform, e-Invoice handling is divided between the platform provider, purchaser, and merchant/service provider:  - Issuance to Purchaser: The e-commerce platform provider assumes the role of Supplier and issues an e-Invoice (upon request) or a receipt to the Purchaser [1]. Merchants and service providers are not required to issue e-Invoices or receipts to Purchasers for platform sales [2][3].  - Consolidated e-Invoice: Where Purchasers do not request an e-Invoice, the e-commerce platform provider may aggregate these transactions monthly and submit a consolidated e-Invoice to IRBM within seven calendar days after month-end [1].  - Self-Billed e-Invoice to Merchant: The e-commerce platform provider must issue a self-billed e-Invoice to the Merchant and/or Service Provider for all platform transactions [4]. For this self-billed e-Invoice, the platform provider acts as the Buyer, while the Merchant/Service Provider is the Supplier [5]. These can be submitted based on existing statement frequencies, such as daily, weekly, monthly, or bi-monthly [5]."
+    },
+    {
+      "id": "q4",
+      "question": "Is an e-Invoice required when a company distributes dividends to its shareholders?",
+      "expected": [
+        "e-invoice-specific-guideline",
+        "e-invoice-general-faqs"
+      ],
+      "bestSimilarity": 0.759,
+      "vectorRank": 1,
+      "rerankedRank": 1,
+      "rerankApplied": true,
+      "vectorDocs": [
+        "e-invoice-specific-guideline p.95",
+        "e-invoice-specific-guideline p.101",
+        "e-invoice-specific-guideline p.96",
+        "e-invoice-general-faqs p.22",
+        "e-invoice-guideline p.16"
+      ],
+      "rerankedDocs": [
+        "e-invoice-specific-guideline p.95",
+        "e-invoice-guideline p.16",
+        "e-invoice-specific-guideline p.96",
+        "e-invoice-specific-guideline p.101",
+        "e-invoice-specific-guideline p.70"
+      ],
+      "answered": true,
+      "refusalReason": null,
+      "citedExpected": true,
+      "citations": [
+        "e-invoice-specific-guideline p.95",
+        "e-invoice-guideline p.16"
+      ],
+      "answer": "It depends on the specific circumstances [2]. Taxpayers that are not entitled to deduct tax under Section 108 of the Income Tax Act 1967 and taxpayers listed on Bursa Malaysia are exempted from issuing self-billed e-Invoices for dividend distributions, and their shareholders do not need to issue e-Invoices [1]. However, taxpayers who do not fall under these exempted categories are required to issue self-billed e-Invoices to document the expense [1]."
+    },
+    {
+      "id": "q5",
+      "question": "Are all businesses required to issue e-Invoices, or are some persons exempted?",
+      "expected": [
+        "e-invoice-general-faqs",
+        "e-invoice-guideline"
+      ],
+      "bestSimilarity": 0.743,
+      "vectorRank": 1,
+      "rerankedRank": 1,
+      "rerankApplied": true,
+      "vectorDocs": [
+        "e-invoice-general-faqs p.3",
+        "e-invoice-general-faqs p.38",
+        "e-invoice-guideline p.15",
+        "e-invoice-guideline p.17",
+        "e-invoice-general-faqs p.12"
+      ],
+      "rerankedDocs": [
+        "e-invoice-general-faqs p.3",
+        "e-invoice-guideline p.15",
+        "e-invoice-general-faqs p.38",
+        "e-invoice-general-faqs p.39",
+        "e-invoice-guideline p.17"
+      ],
+      "answered": true,
+      "refusalReason": null,
+      "citedExpected": true,
+      "citations": [
+        "e-invoice-general-faqs p.3",
+        "e-invoice-guideline p.15",
+        "e-invoice-general-faqs p.38",
+        "e-invoice-guideline p.17"
+      ],
+      "answer": "All taxpayers undertaking commercial activities in Malaysia are required to issue e-Invoices in accordance with the implementation timeline, and no industries are currently exempted [1]. However, certain persons are exempted from issuing e-Invoices [1][2]. Exempted persons include foreign diplomatic offices, individuals not conducting business, statutory bodies, statutory authorities, local authorities (in relation to specific statutory collections and transactions before 1 July 2025), international organisations for transactions before 1 July 2025, and taxpayers with an annual turnover or revenue below RM3,000,000 (subject to specific conditions) [2][3][5]."
+    },
+    {
+      "id": "q6",
+      "question": "Which gifts or contributions made by a resident individual can be deducted in arriving at total income?",
+      "expected": [
+        "pr-4-2024-resident-individual"
+      ],
+      "bestSimilarity": 0.753,
+      "vectorRank": 1,
+      "rerankedRank": 1,
+      "rerankApplied": true,
+      "vectorDocs": [
+        "pr-4-2024-resident-individual p.6",
+        "pr-4-2024-resident-individual p.11",
+        "pr-4-2024-resident-individual p.7",
+        "pr-4-2024-resident-individual p.10",
+        "pr-4-2024-resident-individual p.8"
+      ],
+      "rerankedDocs": [
+        "pr-4-2024-resident-individual p.6",
+        "pr-4-2024-resident-individual p.7",
+        "pr-4-2024-resident-individual p.8",
+        "pr-4-2024-resident-individual p.6",
+        "pr-4-2024-resident-individual p.9"
+      ],
+      "answered": true,
+      "refusalReason": null,
+      "citedExpected": true,
+      "citations": [
+        "pr-4-2024-resident-individual p.6",
+        "pr-4-2024-resident-individual p.7",
+        "pr-4-2024-resident-individual p.8",
+        "pr-4-2024-resident-individual p.6",
+        "pr-4-2024-resident-individual p.9"
+      ],
+      "answer": "Under subsections 44(6) to 44(11D) of the Income Tax Act (ITA), a resident individual can claim tax deductions for the following gifts or contributions:\n\n- **Gift of money** to the Government, a State Government, a local authority, or an approved institution, organization, or fund [1].\n- **Gift of artefact, manuscript, or painting** to the Government or State Government [1].\n- **Gift of money for library facilities** that are accessible to the public, public libraries, or libraries of schools and higher education institutions [4].\n- **Gift of money or contribution in kind** for providing facilities in public places for disabled persons [2].\n- **Gift of money or medical equipment** (cost or value) to an approved healthcare facility [2].\n- **Gift of painting** to the National Art Gallery or any state art gallery [2].\n- **Gift of money for sports activities** approved by the Minister of Finance [2].\n- **Gift of money or contribution in kind** for projects of national interest approved by the Minister of Finance [3].\n- **Gift of money in the form of wakaf or endowment** to eligible religious authorities, allowed bodies, or public universities [3][5]."
+    },
+    {
+      "id": "q7",
+      "question": "What conditions must a company meet to surrender its adjusted loss to a related company under group relief?",
+      "expected": [
+        "pr-2-2025-group-relief"
+      ],
+      "bestSimilarity": 0.747,
+      "vectorRank": 1,
+      "rerankedRank": 1,
+      "rerankApplied": true,
+      "vectorDocs": [
+        "pr-2-2025-group-relief p.7",
+        "pr-2-2025-group-relief p.39",
+        "pr-2-2025-group-relief p.9",
+        "pr-2-2025-group-relief p.10",
+        "pr-2-2025-group-relief p.44"
+      ],
+      "rerankedDocs": [
+        "pr-2-2025-group-relief p.10",
+        "pr-2-2025-group-relief p.7",
+        "pr-2-2025-group-relief p.39",
+        "pr-2-2025-group-relief p.9",
+        "pr-2-2025-group-relief p.52"
+      ],
+      "answered": true,
+      "refusalReason": null,
+      "citedExpected": true,
+      "citations": [
+        "pr-2-2025-group-relief p.10",
+        "pr-2-2025-group-relief p.9"
+      ],
+      "answer": "To surrender an adjusted business loss under group relief, both the surrendering and claimant companies must satisfy the following criteria for a Year of Assessment (YA): 1. Incorporated in Malaysia [4]; 2. Resident in Malaysia in the basis year for that YA [4]; 3. Related companies (maintaining at least 70% ordinary shareholding) throughout the basis period for that YA and the 12-month period immediately preceding that basis period [1][4]; 4. Have a paid-up capital in respect of ordinary shares of more than RM2,500,000 at the beginning of the basis period for that YA [1]; 5. Have a 12-month basis period ending on the same date [1]; 6. Make an irrevocable election to surrender or claim an amount of adjusted business loss in the Income Tax Return Form (ITRF) furnished for that YA under section 77A of the ITA [1]; and 7. Be subject to tax at the appropriate rate as specified in paragraph 2 of Part I of Schedule 1 of the ITA [1]."
+    },
+    {
+      "id": "q8",
+      "question": "How is the income of a Malaysian resident from operating a Malaysian ship treated for income tax?",
+      "expected": [
+        "pr-1-2025-malaysian-ship"
+      ],
+      "bestSimilarity": 0.791,
+      "vectorRank": 1,
+      "rerankedRank": 1,
+      "rerankApplied": true,
+      "vectorDocs": [
+        "pr-1-2025-malaysian-ship p.40",
+        "pr-1-2025-malaysian-ship p.11",
+        "pr-1-2025-malaysian-ship p.10",
+        "pr-1-2025-malaysian-ship p.6",
+        "pr-1-2025-malaysian-ship p.13"
+      ],
+      "rerankedDocs": [
+        "pr-1-2025-malaysian-ship p.17",
+        "pr-1-2025-malaysian-ship p.40",
+        "pr-1-2025-malaysian-ship p.11",
+        "pr-1-2025-malaysian-ship p.10",
+        "pr-1-2025-malaysian-ship p.18"
+      ],
+      "answered": true,
+      "refusalReason": null,
+      "citedExpected": true,
+      "citations": [
+        "pr-1-2025-malaysian-ship p.17",
+        "pr-1-2025-malaysian-ship p.40",
+        "pr-1-2025-malaysian-ship p.10"
+      ],
+      "answer": "For a person resident in Malaysia, income from operating a Malaysian ship—which includes transporting passengers or cargo by sea or letting out an owned Malaysian ship on a voyage or time charter basis—is calculated on a world income scope basis [1][2][4]. Under Section 54A of the Income Tax Act, 100% of the statutory income from this qualifying shipping business is exempt from tax until Year of Assessment (YA) 2026 [1][4]. However, starting from YA 2021, companies receiving this full exemption must comply with prescribed substantive conditions [4]."
+    }
+  ]
+}
